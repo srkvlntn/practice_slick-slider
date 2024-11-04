@@ -9,28 +9,6 @@
     padding: 0 5px;
 }
 
-/*button styles */
-/*.btn {*/
-/*    display: inline-block;*/
-/*    vertical-align: top;*/
-/*    padding: 10px 15px;*/
-/*    border-radius: 4px;*/
-/*    background-color: #000;*/
-/*    color: #fff;*/
-/*    text-decoration: none;*/
-/*    border: none;*/
-/*    line-height: 1.5;*/
-/*    outline: none;*/
-/*}*/
-
-/*.btn:hover {*/
-/*    background-color: #424242;*/
-/*}*/
-
-.full-screen {
-    margin-bottom: 20px;
-}
-
 .full-screen img {
     width: 100vw;
     height: 100vh;
@@ -62,6 +40,11 @@
     padding: 5px;
     border: 2px solid #E2CBD3;
     border-radius: 50%;
+    transition: background-color .3s;
+}
+
+.full-screen .slick-dots li button:hover {
+    background-color: #7c7481;
 }
 
 .full-screen .slick-dots .slick-active button {
@@ -99,8 +82,7 @@ Clickable button in full height
 */
 
 .profile-cards {
-    height: 100vh;
-    margin: 0 auto;
+    padding: 100px 0;
 }
 
 .profile-cards .card .card-img {
@@ -178,3 +160,95 @@ Clickable button in full height
 .profile-cards .card .card-img .hover-box .social-networks li a:hover {
     background-color: #4e5a62;
 }
+
+.profile-cards .slick-dots {
+    position: absolute;
+    list-style: none;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.profile-cards .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.profile-cards .slick-dots li button {
+    background: transparent;
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    border: 2px solid #e1e6ea;
+    border-radius: 50%;
+    transition: background-color .3s;
+}
+
+.profile-cards .slick-dots li button:hover {
+    background-color: #4e5a62;
+}
+
+.profile-cards .slick-dots .slick-active button {
+    background-color: #4e5a62;
+}
+
+.profile-cards .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    z-index: 5;
+    color: #3a454d;
+}
+
+
+.profile-cards .slick-prev {
+    left: 0;
+}
+
+.profile-cards .slick-next {
+    right: 0;
+}
+
+@media (min-width: 400px) {
+    .profile-cards .card {
+        margin: 0 5px;
+    }
+}
+
+@media (min-width: 576px) {
+    .profile-cards .card {
+        margin: 0 8px;
+    }
+}
+
+@media (min-width: 768px) {
+    .profile-cards {
+        padding: 100px 30px;
+    }
+    .profile-cards .card {
+        margin: 0 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .profile-cards .card {
+        margin: 0 15px;
+    }
+}
+
+@media (min-width: 1180px) {
+    .profile-cards {
+        margin: 0 -30px;
+    }
+}
+

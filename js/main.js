@@ -37,3 +37,52 @@ $(document).ready(function(){
         ]
 });
 });
+
+$(document).ready(function(){
+    $('.profile-cards').slick({
+        slidesToShow: 4,
+        dots: false,
+        arrows: true,
+        infinite: true,
+        autoplay:true,
+        autoplaySpeed: 5000,
+        prevArrow: '<button type="button" class="slick-prev"><i class="icon-Arrow-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="icon-Arrow-right"></i></button>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: true,
+                    infinite: true,
+                    autoplay: false,
+                    autoplaySpeed: 7000,
+                    slidesToShow: 3,
+                    prevArrow: '<button type="button" class="slick-prev"><i class="icon-Arrow-left"></i></button>',
+                    nextArrow: '<button type="button" class="slick-next"><i class="icon-Arrow-right"></i></button>',
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    infinite: true,
+                    autoplay: false,
+                    autoplaySpeed: 7000,
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    infinite: true,
+                    autoplay:false,
+                    autoplaySpeed: 10000,
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+});
