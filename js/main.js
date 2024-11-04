@@ -1,7 +1,7 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $('.full-screen').slick({
         infinite: true,
-        autoplay:true,
+        autoplay: true,
         autoplaySpeed: 3000,
         fade: true,
         dots: true,
@@ -14,7 +14,7 @@ $(document).ready(function(){
                 breakpoint: 768,
                 settings: {
                     infinite: true,
-                    autoplay:true,
+                    autoplay: true,
                     autoplaySpeed: 3000,
                     fade: true,
                     slidesToShow: 1,
@@ -26,7 +26,7 @@ $(document).ready(function(){
                 breakpoint: 480,
                 settings: {
                     infinite: true,
-                    autoplay:true,
+                    autoplay: true,
                     slidesToShow: 1,
                     autoplaySpeed: 3000,
                     fade: true,
@@ -35,16 +35,16 @@ $(document).ready(function(){
                 }
             }
         ]
-});
+    });
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('.profile-cards').slick({
         slidesToShow: 4,
         dots: false,
         arrows: true,
         infinite: true,
-        autoplay:true,
+        autoplay: true,
         autoplaySpeed: 5000,
         prevArrow: '<button type="button" class="slick-prev"><i class="icon-Arrow-left"></i></button>',
         nextArrow: '<button type="button" class="slick-next"><i class="icon-Arrow-right"></i></button>',
@@ -78,7 +78,7 @@ $(document).ready(function(){
                     arrows: false,
                     dots: true,
                     infinite: true,
-                    autoplay:false,
+                    autoplay: false,
                     autoplaySpeed: 10000,
                     slidesToShow: 1,
                 }

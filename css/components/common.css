@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .wrapper {
     overflow: hidden;
     position: relative;
@@ -12,6 +19,7 @@
 .full-screen img {
     width: 100vw;
     height: 100vh;
+    -o-object-fit: cover;
     object-fit: cover;
     display: block;
 }
@@ -21,6 +29,8 @@
     list-style: none;
     bottom: 40px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     padding: 0;
     margin: 0;
@@ -40,6 +50,8 @@
     padding: 5px;
     border: 2px solid #E2CBD3;
     border-radius: 50%;
+    -webkit-transition: background-color .3s;
+    -o-transition: background-color .3s;
     transition: background-color .3s;
 }
 
@@ -58,6 +70,8 @@
     margin: 0;
     height: 100vh;
     font-size: 50px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     background: transparent;
     border: none;
@@ -97,6 +111,8 @@ Clickable button in full height
     height: 100%;
     background-color: rgba(255, 255, 255, 0.4);
     opacity: 0;
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
     transition: opacity .3s;
 }
 
@@ -107,17 +123,23 @@ Clickable button in full height
 .profile-cards .card-title {
     padding: 20px;
     background-color: #e1e6ea;
+    -webkit-transition: background-color .3s;
+    -o-transition: background-color .3s;
     transition: background-color .3s;
 }
 
 .profile-cards .card-title h2 {
     color: #292f36;
     text-transform: uppercase;
+    -webkit-transition: color .2s;
+    -o-transition: color .2s;
     transition: color .2s;
 }
 
 .profile-cards .card-title p {
     color: #8d8f92;
+    -webkit-transition: color .2s;
+    -o-transition: color .2s;
     transition: color .2s;
     margin: 0;
 }
@@ -134,9 +156,13 @@ Clickable button in full height
 .profile-cards .card .card-img .hover-box .social-networks {
     position: absolute;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -147,8 +173,14 @@ Clickable button in full height
 
 .profile-cards .card .card-img .hover-box .social-networks li a {
     text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     color: #fff;
     height: 50px;
@@ -166,6 +198,8 @@ Clickable button in full height
     list-style: none;
     bottom: 60px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     padding: 0;
     margin: 0;
@@ -185,6 +219,8 @@ Clickable button in full height
     padding: 5px;
     border: 2px solid #e1e6ea;
     border-radius: 50%;
+    -webkit-transition: background-color .3s;
+    -o-transition: background-color .3s;
     transition: background-color .3s;
 }
 
@@ -199,6 +235,8 @@ Clickable button in full height
 .profile-cards .slick-arrow {
     position: absolute;
     top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
     padding: 0;
     margin: 0;
@@ -234,6 +272,7 @@ Clickable button in full height
     .profile-cards {
         padding: 100px 30px;
     }
+
     .profile-cards .card {
         margin: 0 10px;
     }
@@ -251,4 +290,3 @@ Clickable button in full height
         margin: 0 -30px;
     }
 }
-
