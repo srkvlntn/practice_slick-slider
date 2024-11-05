@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('.full-screen').slick({
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 10000,
         fade: true,
         dots: true,
         arrows: true,
@@ -15,7 +15,7 @@ $(document).ready(function () {
                 settings: {
                     infinite: true,
                     autoplay: true,
-                    autoplaySpeed: 3000,
+                    autoplaySpeed: 10000,
                     fade: true,
                     slidesToShow: 1,
                     arrows: false,
@@ -28,7 +28,7 @@ $(document).ready(function () {
                     infinite: true,
                     autoplay: true,
                     slidesToShow: 1,
-                    autoplaySpeed: 3000,
+                    autoplaySpeed: 10000,
                     fade: true,
                     arrows: false,
                     dots: true,
@@ -45,7 +45,8 @@ $(document).ready(function () {
         arrows: true,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 5000,
+        adaptiveHeight: true,
+        autoplaySpeed: 10000,
         prevArrow: '<button type="button" class="slick-prev"><i class="icon-Arrow-left"></i></button>',
         nextArrow: '<button type="button" class="slick-next"><i class="icon-Arrow-right"></i></button>',
         responsive: [
@@ -54,8 +55,9 @@ $(document).ready(function () {
                 settings: {
                     arrows: true,
                     infinite: true,
-                    autoplay: false,
-                    autoplaySpeed: 7000,
+                    autoplay: true,
+                    adaptiveHeight: true,
+                    autoplaySpeed: 10000,
                     slidesToShow: 3,
                     prevArrow: '<button type="button" class="slick-prev"><i class="icon-Arrow-left"></i></button>',
                     nextArrow: '<button type="button" class="slick-next"><i class="icon-Arrow-right"></i></button>',
@@ -66,9 +68,10 @@ $(document).ready(function () {
                 settings: {
                     arrows: false,
                     dots: true,
+                    adaptiveHeight: true,
                     infinite: true,
-                    autoplay: false,
-                    autoplaySpeed: 7000,
+                    autoplay: true,
+                    autoplaySpeed: 10000,
                     slidesToShow: 2,
                 }
             },
@@ -76,9 +79,10 @@ $(document).ready(function () {
                 breakpoint: 576,
                 settings: {
                     arrows: false,
+                    adaptiveHeight: true,
                     dots: true,
                     infinite: true,
-                    autoplay: false,
+                    autoplay: true,
                     autoplaySpeed: 10000,
                     slidesToShow: 1,
                 }
